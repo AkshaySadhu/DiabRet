@@ -1,8 +1,8 @@
-import tensorflow as tf
+from  PIL import Image
+import numpy as np
+import cv2
+imgpath = "1ae3c58759fb.png"
+img = Image.open(imgpath)
 
-x = tf.placeholder("float", shape=[None, 512, 512, 3])
-print(x.shape)
-y_ = tf.placeholder("float", shape=[None, 5])
-print(y_.shape)
-exit()
-keep_prob = tf.placeholder("float")
+im = np.array(img.getdata()).reshape((512,512,3))
+print(im)
