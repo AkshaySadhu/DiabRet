@@ -43,4 +43,3 @@ for root, dirs, files in os.walk("C:/Users/urani/Documents/Diabetic Retinopathy/
                 print("Disformed image found")
                 shutil.move(imgpath,unprocessable_images)
                 continue
-print(disformed_image_count)
